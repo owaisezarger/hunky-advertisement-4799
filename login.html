@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Log In</title>
+  </head>
+  <style>
+       
+ body {
+  background-color: rgb(228, 229, 247);
+}
+ 
+.LoginForm {
+  font-family: sans-serif;
+  width: 20%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #ffff;
+  padding: 20px;
+ 
+}
+.subtitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: medium;
+ 
+}
+.subtitle  a {
+  font-size:20px;
+  padding: 5px;
+}
+.btn-text {
+  margin: 0;
+}
+ 
+ 
+.or {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid rgb(245 239 239);
+  line-height:1px;
+  margin: 25px 0;
+}
+ 
+.email-login {
+  display: flex;
+  flex-direction: column;
+}
+.email-login label {
+  color: rgb(170 166 166);
+}
+ 
+input[type="text"],
+input[type="password"] {
+  padding: 15px 20px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+ 
+}
+ 
+#btn {
+  background-color: yellowgreen;
+  color: white;
+  padding: 18px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+ 
+.forget-pass {
+  text-align: center;
+  display: block;
+}
+ 
+  </style>
+<body>
+ 
+<div class="LoginForm">
+   <form>
+ 
+      <h2 class="subtitle">Do you have account?<a href="signup.html">sign Up</a></h2>
+ 
+      <p class="or"><span>or</span></p>
+ 
+      <div class="email-login">
+         <label for="email"> <b>Email </b></label>
+         <input type="text" placeholder="Enter Email or Mobile Number" id="name" >
+         <label for="psw"><b>Password</b></label>
+         <input type="password" placeholder="Enter Password" id="psw">
+      </div>
+      <input type="submit" value="Log In" id="btn" >
+     
+   </form>
+</div>
+ 
+ 
+ 
+    </body>
+</html>
+ 
+<script>
+ 
+let form=document.querySelector("form");
+let signUpLs=JSON.parse(localStorage.getItem("signup")) || [];
+ 
+form.addEventListener("submit",function (event){
+  event.preventDefault();
+  if(signUpLs.length==0){
+    alert("No User till Now");
+    return;
+  }
+ 
+  let obj={
+    email:form.name.value,
+    password:form.psw.value,
+  }
+ 
+  let flag=false;
+  signUpLs.forEach(function (elem){
+   
+    if(elem.email==obj.email && elem.password==obj.password){
+      flag=true;
+      localStorage.setItem("Login",JSON.stringify(elem));
+      alert("Login Successfull");
+      window.location.href="https://www.masaischool.com/courses/full-stack-web-dev-full-time/#eligibility."
+    }
+   
+ 
+  });
+  if(flag===false){
+    alert("User Doesn't Exist")
+  }
+   
+  });
+ 
+ 
+</script>
+ 

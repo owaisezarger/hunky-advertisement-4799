@@ -1,10 +1,10 @@
 #navbarContainer{
     width: 80%;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+    /* justify-content:flex-start; */
+    /* margin-top: 20px; */
    
 }
 #searchbar{
@@ -21,12 +21,12 @@ img{
 #cartnav{
     padding: 10px;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     width: 120px;
     height: 60px;
     justify-content: space-evenly;
-    background-color: rgb(180, 177, 177);
+    background-color: rgb(238, 235, 235);
 }
 
 #basket{
@@ -48,8 +48,252 @@ height: 30px;
     justify-content: flex-end;
     display: flex;
     gap: 20px;
-    width: 80%;
+    width: 60%;
     margin: auto;
     height: 40px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+#category{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-items: flex-start;
+    gap:20px;
+
+}
+#shopbycategory{
+    background-color: greenyellow;
+    /* border: 1px red solid; */
+    padding: 10px;
+}
+#shopbycategory+div{
+    width: 800px;
+    padding: 10px;
+    border: .1px solid grey;
+}
+
+.cry{
+    /* border: 1px red solid; */
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+#crauser{
+    width:100%;
+    height: 100%;
+    /* margin: 20px 100px; */
+
+   
+}
+/* #btncrauser{
+    text-align: center;
+} */
+#btncrauser> button:nth-child(1){
+    border: none;
+    background-color:rgba(227, 222, 222, 0.5);
+    position: absolute;
+    left: 200px;
+    bottom: 13px;
+}
+#btncrauser> button:nth-child(2){
+    /* height: 10px; */
+    border: none;
+    background-color:rgba(227, 222, 222, 0.5);
+    position: absolute;
+    left: 283px;
+    bottom: 13px;
+}
+#btncrauser> button:nth-child(3){
+    border: none;
+    background-color:rgba(227, 222, 222, 0.5);
+    position: absolute;
+    left: 363px;
+    bottom: 13px;
+}
+#btncrauser> button:nth-child(4){
+    border: none;
+    background-color:rgba(227, 222, 222, 0.5);
+    position: absolute;
+    left: 443px;
+    bottom: 13px;
+}
+#btncrauser> button:nth-child(5){
+    border: none;
+    background-color:rgba(227, 222, 222, 0.5);
+    position: absolute;
+    left: 533px;
+    bottom: 13px;
+}
+#btncrauser> button:nth-child(6){
+    border: none;
+    background-color:rgba(227, 222, 222, 0.5);
+    position: absolute;
+    left: 613px;
+    bottom: 13px;
+}
+#btncrauser> button:nth-child(7){
+    border: none;
+    background-color:rgba(227, 222, 222, 0.5);
+    position: absolute;
+    left: 693px;
+    bottom: 13px;
+}
+#btncrauser> button:nth-child(8){
+    border: none;
+    background-color:rgba(227, 222, 222, 0.5);
+    position: absolute;
+    left: 773px;
+    bottom: 13px;
+}
+#bank>h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
+#bankcontainer{
+   display: flex;
+    width: 60%;
+    gap: 20px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+#bankcontainer>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#fruits>h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
+#fruitscontainer{
+     /* border: 1px solid red; */
+     width: 60%;
+     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#fruitsdiv1>img{
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* border: 1px solid red; */
+}
+#fruitsdiv2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+}
+#staples>h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
+#staplescontainer{
+   display: flex;
+    width: 60%;
+    gap: 20px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+#staplescontainer>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#Beverages>h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
+#Beveragescontainer{
+     /* border: 1px solid red; */
+     width: 60%;
+     margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#beveragesdiv1>img{
+    width: 90%;
+    height: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* border: 1px solid red; */
+}
+#beveragesdiv2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#snacks>h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
+#snackscontainer{
+   display: flex;
+    width: 60%;
+    gap: 20px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+#snackscontainer>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+
+#cleaning>h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: grey;
+}
+#cleaningcontainer{
+   display: flex;
+    width: 60%;
+    gap: 20px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+#cleaningcontainer>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+
+#featured>h1{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: grey;
+    }
+
+#featured{
+        /* border: 1px red solid; */
+        width: 80%;
+        height: auto;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+    }
+    
+#featuredcrauser{
+        width:100%;
+        height: 100%;
+        /* margin: 20px 100px; */
+       
+}
+#leftbtn{
+    position: absolute;
+    left: 30px;
+    top:300px;
+    border: none;
+    background-color:rgba(227, 222, 222, 0.5);
+    font-size: 20px;
+}
+#rightbtn{
+    position: absolute;
+    right: 30px;
+    top:300px;
+    border: none;
+    background-color:rgba(227, 222, 222, 0.5);
+    font-size: 20px;
 }

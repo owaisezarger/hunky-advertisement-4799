@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+  </head>
+    <style>
+         body {
+  background-color: rgb(228, 229, 247);
+}
+ 
+ 
+.signUp {
+  font-family: sans-serif;
+  width: 20%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #ffff;
+  padding: 20px;
+ 
+}
+ 
+.email-login {
+  display: flex;
+  flex-direction: column;
+}
+.email-login label {
+  color: rgb(170 166 166);
+}
+ 
+input[type="text"],
+input[type="password"] {
+  padding: 15px 20px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+ 
+}
+input[type="number"] {
+  padding: 15px 20px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+ 
+}
+#btn {
+  background-color: yellowgreen;
+  color: white;
+  padding: 18px 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+    </style>
+    <body>
+        <div class="signUp">
+ 
+            <form>
+             
+               <div class="email-login">
+               
+                  <label for="email"> <b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" id="name" >
+                  <label for="number"><b>Number</b></label>
+                  <input type="number" placeholder="Enter Your Number" id="Numb" >
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" id="psw">
+               </div>
+               <input type="submit" value="SignUp" id="btn" >
+               
+        </form>
+        </div>
+        </body>
+        </html>
+    <script>
+ 
+        let form=document.querySelector("form");
+ 
+        let signUpLs=JSON.parse(localStorage.getItem("signup")) || [];
+ 
+        form.addEventListener("submit",function (event){
+            event.preventDefault();
+            let obj={
+                email:form.name.value,
+                number:form.Numb.value,
+                password:form.psw.value,
+            }
+            if(obj.email==""){
+                alert("Please enter Your Email")
+                return
+            }
+            if( obj.number==""){
+                alert("Please enter Your Number")
+                return
+            }
+            if( obj.password==""){
+                alert("Please Set Your Pasword")
+                return
+            }
+            console.log(obj)
+            signUpLs.push(obj);
+            localStorage.setItem("signup",JSON.stringify(signUpLs));
+        });
+ 
+ 
+    </script>

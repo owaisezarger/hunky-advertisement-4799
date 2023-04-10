@@ -7,32 +7,43 @@
     <title>Big-Basket Home Page</title>
     <script src="https://kit.fontawesome.com/704ae7165f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="homePage.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <div id="login">
-        <p>1800-660-8800</p>
-        <p>
-            <select name="location" id="location">
+   
+        <ul  class="precontainer">
+            <li><i class="material-icons" style="font-size:17px">call</i>1800-660-8800</li>
+            <li> <i class="material-icons" style="font-size:17px">edit_location</i>
+                <select name="location" id="location">
                 <option value="Bangalore">Bangalore</option>
-            </select>
-        </p>
-        <p><a href="login.html">login/ Sign up</a></p>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Delhi">Delhi</option>
+                </select>
+            </li>
+            <li><a href="login.html">login/ Sign up</a></li>
+        </ul>
     </div>
-    <div id="navbarContainer">
-       
-        <img src="https://yespunjab.com/wp-content/uploads/2020/11/BigBasket-Logo.jpg" alt="BigBasket-Logo">
-        <input type="search" name="searchbar" id="searchbar" placeholder="Search for products">
-        <div id="searchicon"><i class="fa-solid fa-magnifying-glass"></i></div>
-        <div id="cartnav">
+    
+    <div id="newnavbarContainer">
+        <img class="newbblogo "src="https://yespunjab.com/wp-content/uploads/2020/11/BigBasket-Logo.jpg" alt="BigBasket-Logo">
+        <div class="newSearchsection">
+            <input type="search" name="searchbar" id="newsearchbar" placeholder="Search for products">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+           
+        <div id="newcartnav">
             <div id="basket"><i class="fa-solid fa-basket-shopping"></i></div>
             <p>My Basket</p>
         </div>
-       
     </div>
+   
+
     <div id="category">
         <div id="shopbycategory">SHOP BY CATEGORY</div>
         <div>OFFERS</div>
     </div>
+
     <div class="cry">
         <img id="crauser" src="https://www.bigbasket.com/media/uploads/banner_images/hp_fom_m_bbpl-staples_460_180722_Bangalore.jpg" alt="first">
         <div id="btncrauser">
@@ -49,96 +60,93 @@
 
     <div id="prod">
        
-        <div id="prod1">
+        <div class="prod1">
             <div class="off"><p> Get 40% Off</p></div>
             <img src="https://www.bigbasket.com/media/uploads/p/s/10000069_20-fresho-capsicum-green.jpg">
             <p>Fresho</p>
             <h5>Capsicum- Green (loose)</h5>
             <div class="price">
-                <select name="price" id="select">
+                <select name="price" class="select">
                     <option value="1kg">1kg <span>Rs - 20
                     </span></option>
                     <option value="0.5kg">0.5kg <span>Rs - 10
                     </span></option>
 
                 </select>
-                <div id="qty"></div>
+                <div class="qty"></div>
                 <label for="qty">Qty</label>
                 <input type="text" name="" id="qtyin">
                 <button>Add<i class="fa-solid fa-basket-shopping"></i></button>
             </div>
         </div>
-        <div id="prod1">
+        <div class="prod1">
             <div class="off"><p> Get 40% Off</p></div>
             <img src="https://www.bigbasket.com/media/uploads/p/s/10000072_16-fresho-carrot-orange.jpg">
             <p>Fresho</p>
             <h5>Carrot</h5>
             <div class="price">
-                <select name="price" id="select">
-                    <option value="1kg">1kg <span>Rs - 20
-                    </span></option>
-                    <option value="0.5kg">0.5kg <span>Rs - 10
-                    </span></option>
-
+                <select name="price" class="select">
+                    <option value="1kg">1kg <span>Rs - 20</span></option>
+                    <option value="0.5kg">0.5kg <span>Rs - 10</span></option>
                 </select>
-                <div id="qty"></div>
+                <div class="qty"></div>
                 <label for="qty">Qty</label>
                 <input type="text" name="" id="qtyin">
                 <button>Add<i class="fa-solid fa-basket-shopping"></i></button>
             </div>
         </div>
-        <div id="prod1">
+        <div class="prod1">
             <div class="off"><p> Get 30% Off</p></div>
             <img src="https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg">
             <p>Fresho</p>
             <h5>Cauliflower</h5>
             <div class="price">
-                <select name="price" id="select">
+                <select name="price" class="select">
                     <option value="1kg">1kg <span>Rs - 20
                     </span></option>
                     <option value="0.5kg">0.5kg <span>Rs - 10
                     </span></option>
 
                 </select>
-                <div id="qty"></div>
+                <div class="qty"></div>
                 <label for="qty">Qty</label>
                 <input type="text" name="" id="qtyin">
                 <button>Add<i class="fa-solid fa-basket-shopping"></i></button>
             </div>
         </div>
-        <div id="prod1">
+        <div class="prod1">
             <div class="off"><p> Get 20% Off</p></div>
             <img src="https://www.bigbasket.com/media/uploads/p/s/10000097_19-fresho-coriander-leaves.jpg">
             <p>Fresho</p>
             <h5>Parsley</h5>
             <div class="price">
-                <select name="price" id="select">
+                <select name="price" class="select">
                     <option value="1kg">1kg <span>Rs - 20
                     </span></option>
                     <option value="0.5kg">0.5kg <span>Rs - 10
                     </span></option>
 
                 </select>
-                <div id="qty"></div>
+                <div class="qty"></div>
                 <label for="qty">Qty</label>
                 <input type="text" name="" id="qtyin">
                 <button>Add<i class="fa-solid fa-basket-shopping"></i></button>
             </div>
         </div>
-        <div id="prod1">
+        <div class="prod1">
             <div class="off"><p> Get 20% Off</p></div>
             <img src="https://www.bigbasket.com/media/uploads/p/s/10000103_16-fresho-cucumber.jpg">
             <p>Fresho</p>
             <h5>Capsicum- Green (loose)</h5>
             <div class="price">
-                <select name="price" id="select">
+                <select name="price" class="select">
                     <option value="1kg">1kg <span>Rs - 20
                     </span></option>
                     <option value="0.5kg">0.5kg <span>Rs - 10
                     </span></option>
 
                 </select>
-                <div id="qty"></div>
+                <div class="qty"></div>
                 <label for="qty">Qty</label>
                 <input type="text" name="" id="qtyin">
                 <button>Add<i class="fa-solid fa-basket-shopping"></i></button>
@@ -275,7 +283,7 @@
         <li>Signup</li>
     </ul>
     <form>
-        <input type="text"  id="Email"  placeholder="Your Email Address">
+        <input class="subscribe" type="text"  id="Email"  placeholder="Your Email Address">
         <submit id="subs" >Subscribe</submit>
     </form>
        </div>
